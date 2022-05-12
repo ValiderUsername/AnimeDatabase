@@ -1,0 +1,158 @@
+/*Einstellungen für HTML "Bauteile"*/
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+header {
+    background-color: gray;
+    font-size: 16px;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: lightgreen;
+    background-image: url(/css/SimplerHintergrund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    background-color: lightblue;
+}
+
+/*Einstellungen für Standardtextbefehle in HTML*/
+p {
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 70px
+}
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Einstellungen für Tabellen*/
+table {
+    background-color: lightblue;
+}
+
+th {
+    border: solid 2px;
+    border-color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+td {
+    border: solid 2px;
+    border-color: black;
+    font-size: 16px;
+}
+
+tr {
+    border: solid 2px;
+    border-color: black;
+    text-align: center;
+}
+
+
+/*Einstellungen für speziell selbst erstellte Klassen*/
+.container-fluid {
+    font-size: 16px;
+    background-color: mediumturquoise;
+}
+
+.col-sm-6{
+    text-align: center;
+}
+.person{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Navbar Einstellungen*/
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-bottom: 0.5px;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li {
+    float: left;
+}
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+        li a:hover:not(.active) {
+            background-color: white;
+            color: black;
+        }
+
+/*Button Einstellungen*/
+button {
+    border: none;
+    background-color: lawngreen;
+    padding: 7.5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2.5px 2.5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: lightsteelblue;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+    .button1:hover {
+        background-color: red;
+    }
+
+    /*Suchleiste Einstellungen*/
+    .searchbar{
+        border: solid 2px;
+        border-color: royalblue;
+        background-color: lightblue;
+    }
+
+    /*Einstellungen für Edit und Create Seiten*/
+    .form-control{
+        background-color:lightblue;
+        border: solid 3px black;
+    }
+    .form-group{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+  }
+     
+

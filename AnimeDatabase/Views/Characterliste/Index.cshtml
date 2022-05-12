@@ -1,0 +1,54 @@
+﻿@model IEnumerable<AnimeDatabase.Models.Characterliste>
+
+@{
+    ViewData["Title"] = "CharacterDB";
+}
+
+<h1>Characterliste</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="Characterliste" asp-action="Index">
+    <p>
+        Title: <input class="searchbar" type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Alter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grösse)
+            </th>
+            <th>Daten bearbeiten</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Alter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grösse)
+            </td>
+            <td>
+                <button class="button1"><a asp-action="Edit" asp-route-id="@item.ID">Edit</a></button>
+                <button class="button1"> <a asp-action="Details" asp-route-id="@item.ID">Details</a></button>
+                <button class="button1"><a asp-action="Delete" asp-route-id="@item.ID">Delete</a></button>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

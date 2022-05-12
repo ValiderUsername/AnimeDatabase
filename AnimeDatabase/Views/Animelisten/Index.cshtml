@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AnimeDatabase.Models.Animeliste>
+
+@{
+    ViewData["Title"] = "AnimeDB";
+}
+
+<h1>Animeliste</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="Animelisten" asp-action="Index">
+    <p>
+        Title: <input class="searchbar" type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Episoden)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </th>
+            <th>Daten bearbeiten</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Episoden)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                <button class="button1"><a asp-action="Edit" asp-route-id="@item.ID">Edit</a></button>
+                <button class="button1"><a asp-action="Details" asp-route-id="@item.ID">Details</a></button>
+                <button class="button1"><a asp-action="Delete" asp-route-id="@item.ID">Delete</a></button>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
