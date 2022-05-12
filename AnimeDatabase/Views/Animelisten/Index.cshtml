@@ -5,11 +5,9 @@
 }
 
 <h1 class="Webseitetitel">Animeliste</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-
+<button class="standardbutton">
+    <a class="schrift" asp-action="Create">Create New</a>
+</button>
 <form asp-controller="Animelisten" asp-action="Index">
     <p>
          Search for Title: <input class="searchbar" type="text" name="SearchString" />
@@ -51,9 +49,9 @@
                 @Html.DisplayFor(modelItem => item.ReleaseDate)
             </td>
             <td>
-                <button class="button1"><a asp-action="Edit" asp-route-id="@item.ID">Edit</a></button>
-                <button class="button1"><a asp-action="Details" asp-route-id="@item.ID">Details</a></button>
-                <button class="button1"><a asp-action="Delete" asp-route-id="@item.ID">Delete</a></button>
+                <button class="standardbutton"><a class="schrift" asp-action="Edit" asp-route-id="@item.ID">Edit</a></button>
+                <button class="standardbutton"><a class="schrift" asp-action="Details" asp-route-id="@item.ID">Details</a></button>
+                <button class="standardbutton"><a class="schrift" asp-action="Delete" asp-route-id="@item.ID">Delete</a></button>
             </td>
         </tr>
 }
