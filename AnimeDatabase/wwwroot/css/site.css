@@ -40,6 +40,7 @@ h1{
     text-align: center;
     font-weight: bold;
     margin-top: 70px;
+    margin-bottom: 20px;
     color: white;
 }
 h2 {
@@ -49,29 +50,31 @@ h2 {
 h3 {
     text-align: center;
     font-weight: bold;
+    color: white;
+    margin-bottom: 25px;
 }
 
 /*Einstellungen für Tabellen*/
 table {
-    background-color: dimgrey;
+    background-color: gray;
 }
 
 th {
     border: solid 2px;
-    border-color: black;
+    border-color: white;
     font-weight: bolder;
     font-size: 20px;
 }
 
 td {
     border: solid 2px;
-    border-color: black;
+    border-color: white;
     font-size: 16px;
 }
 
 tr {
     border: solid 2px;
-    border-color: black;
+    border-color: white;
     text-align: center;
 }
 
@@ -79,11 +82,20 @@ tr {
 /*Einstellungen für speziell selbst erstellte Klassen*/
 .container-fluid {
     font-size: 16px;
-    background-color: mediumturquoise;
+    background-color: white;
 }
-
+.col-sm-2{
+}
+.col-sm-3{
+color: white
+}
 .col-sm-6{
+    border: solid white 2px;
     text-align: center;
+    color: white;
+    background-color: gray;
+    font-size: 15px;
+    font-weight: bold;
 }
 .person{
     font-size: 20px;
@@ -134,29 +146,29 @@ li {
     touch-action: manipulation;
 }
 
-
-    /*Suchleiste Einstellungen*/
-    .searchbar{
+/*Suchleiste Einstellungen*/
+.searchbar{
         border: solid 2px;
-        border-color: royalblue;
-        background-color: lightblue;
+        border-color: white;
+        background-color: gray;
     }
 
-    /*Einstellungen für Edit und Create Seiten*/
-    .form-control{
-        background-color:lightblue;
-        border: solid 3px black;
-        width: 300px;
-        height: 35px;
+/*Einstellungen für Edit und Create Seiten*/
+.form-control{
+        background-color:lightgrey;
+        
         text-align: center;
+        align-content: center;
     }
     .form-group{
         font-size: 18px;
         font-weight: bold;
+        text-align: center;
+        color: white;
   }
 
     .Webseitetitel{
-        border-bottom: solid 2px;
+        border-bottom: solid 2.5px;
     }
      
     .schrift{
@@ -166,7 +178,8 @@ li {
     }
 
     .container{
+    text-align:center;  
+    }
+    p{
         color: white;
-        border: solid;
-        align-content: center;
     }
