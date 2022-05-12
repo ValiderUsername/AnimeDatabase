@@ -4,7 +4,7 @@
     ViewData["Title"] = "AnimeDB";
 }
 
-<h1>Animeliste</h1>
+<h1 class="Webseitetitel">Animeliste</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -12,7 +12,7 @@
 
 <form asp-controller="Animelisten" asp-action="Index">
     <p>
-        Title: <input class="searchbar" type="text" name="SearchString" />
+         Search for Title: <input class="searchbar" type="text" name="SearchString" />
         <input type="submit" value="Filter" />
     </p>
 </form>

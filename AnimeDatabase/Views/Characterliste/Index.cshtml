@@ -4,15 +4,15 @@
     ViewData["Title"] = "CharacterDB";
 }
 
-<h1>Characterliste</h1>
+<h1 class="Webseitetitel">Characterliste</h1>
 
-<p>
+<p class="button1">
     <a asp-action="Create">Create New</a>
 </p>
 
 <form asp-controller="Characterliste" asp-action="Index">
     <p>
-        Title: <input class="searchbar" type="text" name="SearchString" />
+        Search for Name: <input class="searchbar" type="text" name="SearchString" />
         <input type="submit" value="Filter" />
     </p>
 </form>
