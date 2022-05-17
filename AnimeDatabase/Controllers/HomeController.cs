@@ -24,7 +24,7 @@ namespace AnimeDatabase.Controllers
             return View((animes, characters));
         }
 
-        public IActionResult Privacy()
+        public IActionResult Ersteller()
         {
             return View();
         }
