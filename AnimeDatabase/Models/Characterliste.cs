@@ -10,7 +10,7 @@ namespace AnimeDatabase.Models
 
         [StringLength(40, MinimumLength = 2)]
         [Required]
-        public string? Name { get; set; }
+        public string Name { get; set; }
 
         [Range(1, 500000)]
         [Required]

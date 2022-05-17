@@ -14,8 +14,8 @@ namespace AnimeDatabase.Data
         {
         }
 
-        public DbSet<AnimeDatabase.Models.Animeliste>? Animeliste { get; set; }
+        public DbSet<AnimeDatabase.Models.Animeliste> Animeliste { get; set; }
 
-        public DbSet<AnimeDatabase.Models.Characterliste>? Characterliste { get; set; }
+        public DbSet<AnimeDatabase.Models.Characterliste> Characterliste { get; set; }
     }
 }

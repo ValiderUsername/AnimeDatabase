@@ -2,26 +2,22 @@
 html {
     font-size: 14px;
 }
-
 @media (min-width: 768px) {
     html {
         font-size: 16px;
     }
 }
-
 html {
     position: relative;
     min-height: 100%;
 }
-
 header {
     background-color: gray;
     font-size: 16px;
 }
-
 body {
     margin-bottom: 60px;
-    background-image: url(/css/DunklerHintergrund.jpg);
+    background-image: url(/css/Bilder/DunklerHintergrund.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -35,13 +31,14 @@ footer{
 /*Einstellungen für Standardtextbefehle in HTML*/
 p {
     text-align: center;
+    color: royalblue;
 }
 h1{
     text-align: center;
     font-weight: bold;
     margin-top: 70px;
     margin-bottom: 20px;
-    color: white;
+    color: royalblue;
 }
 h2 {
     text-align: center;
@@ -50,58 +47,69 @@ h2 {
 h3 {
     text-align: center;
     font-weight: bold;
-    color: white;
+    color: royalblue;
     margin-bottom: 25px;
 }
-
+h4{
+    color: royalblue;
+}
 /*Einstellungen für Tabellen*/
 table {
     background-color: gray;
 }
-
 th {
     border: solid 2px;
-    border-color: white;
+    border-color: black;
     font-weight: bolder;
     font-size: 20px;
 }
-
 td {
     border: solid 2px;
-    border-color: white;
+    border-color: black;
     font-size: 16px;
 }
-
 tr {
     border: solid 2px;
-    border-color: white;
+    border-color: black;
     text-align: center;
 }
 
 
 /*Einstellungen für speziell selbst erstellte Klassen*/
-.container-fluid {
-    font-size: 16px;
-    background-color: white;
+.container {
+    text-align: center;
 }
+
 .col-sm-2{
 }
 .col-sm-3{
-color: white
+color: royalblue
 }
 .col-sm-6{
-    border: solid white 2px;
+    border: solid 2px;
+    border-color: black;
     text-align: center;
-    color: white;
+    color: black;
     background-color: gray;
     font-size: 15px;
     font-weight: bold;
 }
-.person{
-    font-size: 20px;
+.Webseitetitel {
+    border-bottom: solid 2.5px;
+}
+.schrift {
+    color: black;
+    text-decoration: auto;
     font-weight: bold;
 }
-
+.light-mode {
+    background-image: url(/css/Bilder/HellerHintergrund.jpg);
+    color: black;
+}
+.link {
+    text-decoration: auto;
+    color: white;
+}
 /*Navbar Einstellungen*/
 ul {
     list-style-type: none;
@@ -155,8 +163,7 @@ li {
 
 /*Einstellungen für Edit und Create Seiten*/
 .form-control{
-        background-color:lightgrey;
-        
+        background-color:lightsteelblue;
         text-align: center;
         align-content: center;
     }
@@ -164,22 +171,9 @@ li {
         font-size: 18px;
         font-weight: bold;
         text-align: center;
-        color: white;
+        color: royalblue;
   }
 
-    .Webseitetitel{
-        border-bottom: solid 2.5px;
-    }
-     
-    .schrift{
-        color: white;
-        text-decoration: auto;
-        font-weight: bold;
-    }
+  
 
-    .container{
-    text-align:center;  
-    }
-    p{
-        color: white;
-    }
+    

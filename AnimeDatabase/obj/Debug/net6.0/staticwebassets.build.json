@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+FJ9fJcGUwGlFqfskO66nlzgRjhKkuHdkjzRS8u3uSs=",
+  "Hash": "DTd9ILbut8v7YILMJvdFPODzUYnklAfyPCW5bozz3iw=",
   "Source": "AnimeDatabase",
   "BasePath": "_content/AnimeDatabase",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AnimeDatabase.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\BackgroundMuster.jpg",
+      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\Bilder\\backgroundTabelle.jpg",
       "SourceId": "AnimeDatabase",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\",
       "BasePath": "_content/AnimeDatabase",
-      "RelativePath": "css/BackgroundMuster.jpg",
+      "RelativePath": "css/Bilder/backgroundTabelle.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,15 +65,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\BackgroundMuster.jpg"
+      "OriginalItemSpec": "wwwroot\\css\\Bilder\\backgroundTabelle.jpg"
     },
     {
-      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\backgroundTabelle.jpg",
+      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\Bilder\\Beispielperson.jpg",
       "SourceId": "AnimeDatabase",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\",
       "BasePath": "_content/AnimeDatabase",
-      "RelativePath": "css/backgroundTabelle.jpg",
+      "RelativePath": "css/Bilder/Beispielperson.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,15 +82,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\backgroundTabelle.jpg"
+      "OriginalItemSpec": "wwwroot\\css\\Bilder\\Beispielperson.jpg"
     },
     {
-      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\Beispielperson.jpg",
+      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\Bilder\\DunklerHintergrund.jpg",
       "SourceId": "AnimeDatabase",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\",
       "BasePath": "_content/AnimeDatabase",
-      "RelativePath": "css/Beispielperson.jpg",
+      "RelativePath": "css/Bilder/DunklerHintergrund.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,15 +99,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Beispielperson.jpg"
+      "OriginalItemSpec": "wwwroot\\css\\Bilder\\DunklerHintergrund.jpg"
     },
     {
-      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\DunklerHintergrund.jpg",
+      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\Bilder\\HellerHintergrund.jpg",
       "SourceId": "AnimeDatabase",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\",
       "BasePath": "_content/AnimeDatabase",
-      "RelativePath": "css/DunklerHintergrund.jpg",
+      "RelativePath": "css/Bilder/HellerHintergrund.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,15 +116,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\DunklerHintergrund.jpg"
+      "OriginalItemSpec": "wwwroot\\css\\Bilder\\HellerHintergrund.jpg"
     },
     {
-      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\images.jpg",
+      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\Bilder\\images.jpg",
       "SourceId": "AnimeDatabase",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\",
       "BasePath": "_content/AnimeDatabase",
-      "RelativePath": "css/images.jpg",
+      "RelativePath": "css/Bilder/images.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,41 +133,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\images.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\SimpleBackground.jpg",
-      "SourceId": "AnimeDatabase",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\",
-      "BasePath": "_content/AnimeDatabase",
-      "RelativePath": "css/SimpleBackground.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\SimpleBackground.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\SimplerHintergrund.jpg",
-      "SourceId": "AnimeDatabase",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\",
-      "BasePath": "_content/AnimeDatabase",
-      "RelativePath": "css/SimplerHintergrund.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\SimplerHintergrund.jpg"
+      "OriginalItemSpec": "wwwroot\\css\\Bilder\\images.jpg"
     },
     {
       "Identity": "C:\\Users\\Till Strasser\\source\\repos\\AnimeDatabase\\AnimeDatabase\\wwwroot\\css\\site.css",

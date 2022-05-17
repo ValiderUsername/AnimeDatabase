@@ -1,21 +1,27 @@
-﻿using AnimeDatabase.Models;
+﻿using AnimeDatabase.Data;
+using AnimeDatabase.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
 
 namespace AnimeDatabase.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly AnimeDatabaseContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(AnimeDatabaseContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public IActionResult Index()
+
+        public async Task<IActionResult> IndexAsync()
         {
-            return View();
+            var animes = await _context.Animeliste.ToListAsync();
+            var characters = await _context.Characterliste.ToListAsync();
+
+            return View((animes, characters));
         }
 
         public IActionResult Privacy()
