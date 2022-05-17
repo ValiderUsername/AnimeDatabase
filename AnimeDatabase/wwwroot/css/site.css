@@ -110,6 +110,11 @@ color: royalblue
     text-decoration: auto;
     color: white;
 }
+.erstellerinfos{
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+}
 /*Navbar Einstellungen*/
 ul {
     list-style-type: none;
