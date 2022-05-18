@@ -5,41 +5,40 @@
 
 <h1 class="Webseitetitel">Hauptseite</h1>
   <div class="row">
-      <div id="MyClockDisplay" class="clock" onload="showTime()"></div> 
       <h3>Unsere Datenbanken</h3>
       <div class="col-sm-12">
 <h4>Animes</h4>
 <button>@Html.ActionLink("Titel sortieren", "Index", new { sortAnime = ViewBag.AnimeSort })</button>
-   <table class="table">
+   <table class="container">
     <thead>
         <tr>
-            <th><h1>
+            <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Anime[0].Title)
-            </h1></th>
-            <th><h1>
+            </h2></th>
+            <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Anime[1].Genre)
-           </h1></th>
-            <th><h1>
+           </h2></th>
+            <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Anime[2].Episoden)
-            </h1></th>
-            <th><h1>
+            </h2></th>
+            <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Anime[3].ReleaseDate)
-            </h1></th>
+            </h2></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model.Anime) {
         <tr>
-            <td>
+            <td class="trennung">
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
-            <td>
+            <td class="trennung">
                 @Html.DisplayFor(modelItem => item.Genre)
             </td>
-            <td>
+            <td class="trennung">
                 @Html.DisplayFor(modelItem => item.Episoden)
             </td>
-            <td>
+            <td class="trennung">
                 @Html.DisplayFor(modelItem => item.ReleaseDate)
             </td>
         </tr>
@@ -50,30 +49,30 @@
        <div class="col-sm-12">
            <h4>Characters</h4>
            <button>@Html.ActionLink("Name sortieren", "Index", new { sortCharacter = ViewBag.CharacterSort })</button>
-           <table class="table">
+           <table class="container">
     <thead>
         <tr>
-            <th><h1>
+            <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Characters[0].Name)
-            </h1></th>
-            <th><h1>
+            </h2></th>
+            <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Characters[1].Alter)
-            </h1></th>
-            <th><h1>
+            </h2></th>
+            <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Characters[2].Grösse)
-            </h1></th>
+            </h2></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model.Characters) {
         <tr>
-            <td>
+            <td class="trennung">
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
-            <td>
+            <td class="trennung">
                 @Html.DisplayFor(modelItem => item.Alter)
             </td>
-            <td>
+            <td class="trennung">
                 @Html.DisplayFor(modelItem => item.Grösse)
             </td>
         </tr>

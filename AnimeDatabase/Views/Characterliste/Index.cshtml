@@ -18,31 +18,31 @@
 <table class="container">
     <thead>
         <tr>
-            <th><h1>
+            <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Name)
-            </h1></th>
-            <th><h1>
+            </h2></th>
+            <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Alter)
-            </h1></th>
-            <th><h1>
+            </h2></th>
+            <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Grösse)
-            </h1></th>
-            <th><h1>Daten bearbeiten</h1></th>
+            </h2></th>
+            <th class="trennung"><h2>Daten bearbeiten</h2></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td class="trennung">
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
-            <td>
+            <td class="trennung">
                 @Html.DisplayFor(modelItem => item.Alter)
             </td>
-            <td>
+            <td class="trennung">
                 @Html.DisplayFor(modelItem => item.Grösse)
             </td>
-            <td>
+            <td class="trennung">
                 <button class="standardbutton"><a class="schrift" asp-action="Edit" asp-route-id="@item.ID">Edit</a></button>
                 <button class="standardbutton"><a class="schrift" asp-action="Details" asp-route-id="@item.ID">Details</a></button>
                 <button class="standardbutton"><a class="schrift"asp-action="Delete" asp-route-id="@item.ID">Delete</a></button>
