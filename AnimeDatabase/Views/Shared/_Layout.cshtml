@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AnimeDatabase.styles.css" asp-append-version="true" />
+    <link rel="icon" type="image/x-icon" href="~/css/Bilder/Kurumi.png" />
 </head>
 <body>
     <header>
  <ul>
-  <li><a asp-area="" asp-controller="Home" asp-action="Index">AnimeDatabase - Home</a></li>
+  <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
   <li><a asp-area="" asp-controller="Animelisten" asp-action="Index">AnimeDB</a></li>
   <li><a asp-area="" asp-controller="Characterliste" asp-action="Index">CharacterDB</a></li>
-  <li><a asp-area"" asp-controller=Home asp-action="Ersteller">Ersteller der Seite</a></li>
-  <li><a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Datenbank herunterladen</a></li>
+  <li><a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">DB herunterladen</a></li>
+  <li><div class="dropdown">
+      <button class="dropbtn">Optionen</button>
+      <div class="dropdown-content">
+          <div class="row">
+          <button class="standardbutton, schrift" onclick="darklightmode()">Dark/Light Mode</button>
+           <script src=~/js/site.js></script>
+          <button class="standardbutton, schrift" onclick="Browserstatus()">Browser Online?</button>
+          <button class="standardbutton">Test</button>
+          </div>
+      </div>
+  </div></li>
 </ul>
     </header>
     <div class="container">
@@ -26,14 +37,8 @@
 
     <footer class="border-top footer text-muted">
         <div class="container, schrift">
-            <button onclick="myFunction()">Activate Dark/Light Mode</button>
-            <script>
-            function myFunction() {
-            var element = document.body;
-            element.classList.toggle("light-mode");
-            }</script>
-           
-        </div>
+    <button><a class="schrift" asp-area"" asp-controller=Home asp-action="Ersteller">Ersteller der Seite</a></button>        
+    </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

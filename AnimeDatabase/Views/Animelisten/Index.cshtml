@@ -5,11 +5,9 @@
 }
 
 <h1 class="Webseitetitel">Animeliste</h1>
-<div class="container">
 <button class="standardbutton">
 <a class="schrift" asp-action="Create">Create New</a>
 </button>
-</div>
 
 <form asp-controller="Animelisten" asp-action="Index">
     <p>
@@ -57,6 +55,6 @@
                 <button class="standardbutton"><a class="schrift" asp-action="Delete" asp-route-id="@item.ID">Delete</a></button>
             </td>
         </tr>
-}
+        }
     </tbody>
 </table>

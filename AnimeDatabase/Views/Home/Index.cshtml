@@ -2,13 +2,17 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-<h1 class="Webseitetitel">Willkommen zu unserer Webseite</h1>
 
-<h3>Unsere Datenbanken</h3>
+<h1 class="Webseitetitel">Willkommen zu unserer Webseite</h1>
   <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+            <div class="col-sm-12">
+      <div id="MyClockDisplay" class="clock" onload="showTime()"></div> 
+      </div>
+      <h3>Unsere Datenbanken</h3>
+
+      <div class="col-sm-12">
 <h4>Animes</h4>
+<button>@Html.ActionLink("Titel sortieren", "Index", new { sortAnime = ViewBag.AnimeSort })</button>
    <table class="table">
     <thead>
         <tr>
@@ -46,11 +50,9 @@
     </tbody>
 </table>
       </div>
-            <div class="col-sm-1"></div>
-
-       <div class="col-sm-1"></div>
-       <div class="col-sm-10">
+       <div class="col-sm-12">
            <h4>Characters</h4>
+           <button>@Html.ActionLink("Name sortieren", "Index", new { sortCharacter = ViewBag.CharacterSort })</button>
            <table class="table">
     <thead>
         <tr>
@@ -82,6 +84,4 @@
     </tbody>
 </table>
       </div>
-        <div class="col-sm-1"></div>
-
 </div>
