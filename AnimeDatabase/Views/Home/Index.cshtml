@@ -3,31 +3,28 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h1 class="Webseitetitel">Willkommen zu unserer Webseite</h1>
+<h1 class="Webseitetitel">Hauptseite</h1>
   <div class="row">
-            <div class="col-sm-12">
       <div id="MyClockDisplay" class="clock" onload="showTime()"></div> 
-      </div>
       <h3>Unsere Datenbanken</h3>
-
       <div class="col-sm-12">
 <h4>Animes</h4>
 <button>@Html.ActionLink("Titel sortieren", "Index", new { sortAnime = ViewBag.AnimeSort })</button>
    <table class="table">
     <thead>
         <tr>
-            <th>
+            <th><h1>
                 @Html.DisplayNameFor(model => model.Anime[0].Title)
-            </th>
-            <th>
+            </h1></th>
+            <th><h1>
                 @Html.DisplayNameFor(model => model.Anime[1].Genre)
-            </th>
-            <th>
+           </h1></th>
+            <th><h1>
                 @Html.DisplayNameFor(model => model.Anime[2].Episoden)
-            </th>
-            <th>
+            </h1></th>
+            <th><h1>
                 @Html.DisplayNameFor(model => model.Anime[3].ReleaseDate)
-            </th>
+            </h1></th>
         </tr>
     </thead>
     <tbody>
@@ -56,15 +53,15 @@
            <table class="table">
     <thead>
         <tr>
-            <th>
+            <th><h1>
                 @Html.DisplayNameFor(model => model.Characters[0].Name)
-            </th>
-            <th>
+            </h1></th>
+            <th><h1>
                 @Html.DisplayNameFor(model => model.Characters[1].Alter)
-            </th>
-            <th>
+            </h1></th>
+            <th><h1>
                 @Html.DisplayNameFor(model => model.Characters[2].Grösse)
-            </th>
+            </h1></th>
         </tr>
     </thead>
     <tbody>
