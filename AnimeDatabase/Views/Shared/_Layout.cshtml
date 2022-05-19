@@ -18,22 +18,24 @@
   <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-fw fa-home"></i>Home</a>
   <a asp-area="" asp-controller="Animelisten" asp-action="Index"><i class="fa fa-table"></i>AnimeTB</a>
   <a asp-area="" asp-controller="Characterliste" asp-action="Index"><i class="fa fa-table"></i>CharacterTB</a>
+  <a asp-area="" asp-controller=Home asp-action="Ersteller"><i class="material-icons">people</i>Ersteller der Seite</a>
    <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class='fas fa-download'></i>Database</a>
    <a href="javascript:void(0);" class="icon" onclick="ResponsiveNavbar()"><i class="fa fa-bars"></i></a>
+   	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 </div>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container, schrift">
-    <button><a class="schrift" asp-area="" asp-controller=Home asp-action="Ersteller">Ersteller der Seite</a></button>  
-    <button onclick="darklightmode()">Dark/Light-Mode</button>
-    <button onclick="Browserstatus()">Browser Online?</button></div>
-    </footer>
+    <div id="zusatzoptionen" class="sidenav">
+  <a onclick="darklightmode()" id="darklightmode">Design<i class="material-icons" style='font-size:20px'>style</i></a>
+  <a onclick="Browserstatus()" id="browserstatus">Online<i class="material-icons" style='font-size:20px'>wifi</i></a>
+  <a onclick="showTime()" id="uhr">Uhrzeit<i class='fas fa-clock' style='font-size:20px'></i></a>
+</div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

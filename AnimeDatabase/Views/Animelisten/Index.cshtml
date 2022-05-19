@@ -54,9 +54,9 @@
                 @Html.DisplayFor(modelItem => item.Rating)/10
             </h2></td>
             <td class="trennung">
-                <button class="standardbutton" style='font-size:25px;'><a class="schrift" asp-action="Edit" asp-route-id="@item.ID"/><i class='far fa-edit'></i></button>
-                <button class="standardbutton" style='font-size:25px'><a class="schrift" asp-action="Details" asp-route-id="@item.ID"/><i class="fas fa-info"></i></button>
-                <button class="standardbutton" style='font-size:25px'><a class="schrift"asp-action="Delete" asp-route-id="@item.ID"/><i class="fas fa-minus-circle"></i></button>
+                <button title="Edit" class="standardbutton" style='font-size:25px;'><a class="schrift" asp-action="Edit" asp-route-id="@item.ID"/><i class='far fa-edit'></i></button>
+                <button title="Details" class="standardbutton" style='font-size:25px'><a class="schrift" asp-action="Details" asp-route-id="@item.ID"/><i class="fas fa-info"></i></button>
+                <button title="Delete" class="standardbutton" style='font-size:25px'><a class="schrift"asp-action="Delete" asp-route-id="@item.ID"/><i class="fas fa-minus-circle"></i></button>
             </td>
         </tr>
         }
