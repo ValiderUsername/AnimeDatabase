@@ -281,7 +281,7 @@ color: royalblue
 
         /* Background-color of the odd rows */
         .container tr:nth-child(odd) {
-            background-color: darkblue;
+            background-color: royalblue;
         }
 
         /* Background-color of the even rows */
@@ -309,16 +309,19 @@ color: royalblue
             color: black;
             font-weight: bold;
             box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
-            transform: translate3d(25px, -3px, 0);
+            transform: translate3d(10px, -10px, 0);
             transition-delay: 0s;
             transition-duration: 0.5s;
             transition-property: all;
         }
 
     @media (max-width: 800px) {
-        .container td:nth-child(4),
-        .container th:nth-child(4) {
-            display: none;
+        .container td{
+            font-size: 11px
+        }
+        .container tr {
+            font-size: 13px;
+            font-weight: normal;
         }
     }
 
