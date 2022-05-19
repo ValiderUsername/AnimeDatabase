@@ -22,6 +22,9 @@ namespace AnimeDatabase.Models
         [DataType(DataType.Date)]
         [Required]
         public DateTime ReleaseDate { get; set; }
-       
+
+        [Range(1, 10)]
+
+        public int Rating { get; set; }
     }
 }

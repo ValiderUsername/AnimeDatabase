@@ -4,8 +4,6 @@
     ViewData["Title"] = "Delete Anime";
 }
 
-<h1 class="Webseitetitel">Delete Anime</h1>
-
 <div>
     <hr />
     <dl class="row">
@@ -38,6 +36,12 @@
         </dt>
         <dd class = "col-sm-6">
             @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+        <dt class = "col-sm-3">
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+        <dd class = "col-sm-6">
+            @Html.DisplayFor(model => model.Rating)
         </dd>
         <dt class = "col-sm-3">
         </dt>

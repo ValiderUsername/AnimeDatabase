@@ -4,11 +4,8 @@
     ViewData["Title"] = "CharacterDB";
 }
 
-<h1 class="Webseitetitel">Characterliste</h1>
-<button class="standardbutton">
-    <a class="schrift" asp-action="Create">Create New</a>
-</button>
-
+   <h1 class="Webseitetitel">Characterliste</h1>
+   <button style="font-size:25px"><a class="schrift" asp-action="Create">Create New</a><i class="material-icons">create</i></button>
 <form asp-controller="Characterliste" asp-action="Index">
     <p>
         Search for Name: <input class="searchbar" type="text" name="SearchString" />
@@ -26,8 +23,11 @@
             </h2></th>
             <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Grösse)
+                </h2></th>
+             <th class="trennung"><h2>
+                @Html.DisplayNameFor(model => model.Rating)
             </h2></th>
-            <th class="trennung"><h2>Daten bearbeiten</h2></th>
+            <th class="trennung"><h2>Optionen</h2></th>
         </tr>
     </thead>
     <tbody>
@@ -43,9 +43,12 @@
                 @Html.DisplayFor(modelItem => item.Grösse)
             </td>
             <td class="trennung">
-                <button class="standardbutton"><a class="schrift" asp-action="Edit" asp-route-id="@item.ID">Edit</a></button>
-                <button class="standardbutton"><a class="schrift" asp-action="Details" asp-route-id="@item.ID">Details</a></button>
-                <button class="standardbutton"><a class="schrift"asp-action="Delete" asp-route-id="@item.ID">Delete</a></button>
+                @Html.DisplayFor(modelItem => item.Rating)/10
+            </td>
+            <td class="trennung">
+               <button class="standardbutton" style='font-size:25px;'><a class="schrift" asp-action="Edit" asp-route-id="@item.ID"/><i class='far fa-edit'></i></button>
+                <button class="standardbutton" style='font-size:25px'><a class="schrift" asp-action="Details" asp-route-id="@item.ID"/><i class="fas fa-info"></i></button>
+                <button class="standardbutton" style='font-size:25px'><a class="schrift"asp-action="Delete" asp-route-id="@item.ID"/><i class="fas fa-minus-circle"></i></button>
             </td>
         </tr>
         }

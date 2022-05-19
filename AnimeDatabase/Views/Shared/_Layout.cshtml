@@ -7,37 +7,20 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AnimeDatabase.styles.css" asp-append-version="true" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="icon" type="image/x-icon" href="~/css/Bilder/Kurumi.png" />
 </head>
 <body>
     <header>
-        <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+         <div class="topnav" id="myTopnav">
+  <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-fw fa-home"></i>Home</a>
+  <a asp-area="" asp-controller="Animelisten" asp-action="Index"><i class="fa fa-table"></i>AnimeTB</a>
+  <a asp-area="" asp-controller="Characterliste" asp-action="Index"><i class="fa fa-table"></i>CharacterTB</a>
+   <a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class='fas fa-download'></i>Database</a>
+   <a href="javascript:void(0);" class="icon" onclick="ResponsiveNavbar()"><i class="fa fa-bars"></i></a>
 </div>
-<!--
- <ul>
-  <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-  <li><a asp-area="" asp-controller="Animelisten" asp-action="Index">AnimeDB</a></li>
-  <li><a asp-area="" asp-controller="Characterliste" asp-action="Index">CharacterDB</a></li>
-  <li><a class="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">DB herunterladen</a></li>
-  <li><div class="dropdown">
-      <button class="dropbtn">Optionen</button>
-      <div class="dropdown-content">
-          <div class="row">
-          <button class="standardbutton, schrift" onclick="darklightmode()">Dark/Light Mode</button>
-           <script src=~/js/site.js></script>
-          <button class="standardbutton, schrift" onclick="Browserstatus()">Browser Online?</button>
-          <button class="standardbutton">Test</button>
-          </div>
-      </div>
-  </div></li>
-</ul>-->
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -47,8 +30,9 @@
 
     <footer class="border-top footer text-muted">
         <div class="container, schrift">
-    <button><a class="schrift" asp-area"" asp-controller=Home asp-action="Ersteller">Ersteller der Seite</a></button>        
-    </div>
+    <button><a class="schrift" asp-area="" asp-controller=Home asp-action="Ersteller">Ersteller der Seite</a></button>  
+    <button onclick="darklightmode()">Dark/Light-Mode</button>
+    <button onclick="Browserstatus()">Browser Online?</button></div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

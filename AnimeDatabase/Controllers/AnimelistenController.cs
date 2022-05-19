@@ -61,7 +61,7 @@ namespace AnimeDatabase.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Title,Genre,Episoden,ReleaseDate")] Animeliste animeliste)
+        public async Task<IActionResult> Create([Bind("ID,Title,Genre,Episoden,ReleaseDate,Rating")] Animeliste animeliste)
         {
             if (ModelState.IsValid)
             {
@@ -93,7 +93,7 @@ namespace AnimeDatabase.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Title,Genre,Episoden,ReleaseDate")] Animeliste animeliste)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Title,Genre,Episoden,ReleaseDate,Rating")] Animeliste animeliste)
         {
             if (id != animeliste.ID)
             {

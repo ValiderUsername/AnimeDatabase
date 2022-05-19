@@ -2,13 +2,12 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-
 <h1 class="Webseitetitel">Hauptseite</h1>
   <div class="row">
-      <h3>Unsere Datenbanken</h3>
       <div class="col-sm-12">
+<h3>Unsere Datenbanken</h3>
 <h4>Animes</h4>
-<button>@Html.ActionLink("Titel sortieren", "Index", new { sortAnime = ViewBag.AnimeSort })</button>
+<button style='font-size:16px'>@Html.ActionLink("Title", "Index", new { sortAnime = ViewBag.AnimeSort })<i class='fas fa-sort-alpha-down-alt'></i></button>
    <table class="container">
     <thead>
         <tr>
@@ -23,6 +22,9 @@
             </h2></th>
             <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Anime[3].ReleaseDate)
+            </h2></th>
+            <th class="trennung"><h2>
+                @Html.DisplayNameFor(model => model.Characters[4].Rating)
             </h2></th>
         </tr>
     </thead>
@@ -41,6 +43,9 @@
             <td class="trennung">
                 @Html.DisplayFor(modelItem => item.ReleaseDate)
             </td>
+            <td class="trennung">
+                @Html.DisplayFor(modelItem => item.Rating)/10
+            </td>
         </tr>
 }
     </tbody>
@@ -48,7 +53,7 @@
       </div>
        <div class="col-sm-12">
            <h4>Characters</h4>
-           <button>@Html.ActionLink("Name sortieren", "Index", new { sortCharacter = ViewBag.CharacterSort })</button>
+           <button style='font-size:16px'>@Html.ActionLink("Name sortieren", "Index", new { sortCharacter = ViewBag.CharacterSort })<i class='fas fa-sort-alpha-down-alt'></i></button>
            <table class="container">
     <thead>
         <tr>
@@ -60,6 +65,9 @@
             </h2></th>
             <th class="trennung"><h2>
                 @Html.DisplayNameFor(model => model.Characters[2].Grösse)
+            </h2></th>
+            <th class="trennung"><h2>
+                @Html.DisplayNameFor(model => model.Characters[3].Rating)
             </h2></th>
         </tr>
     </thead>
@@ -74,6 +82,9 @@
             </td>
             <td class="trennung">
                 @Html.DisplayFor(modelItem => item.Grösse)
+            </td>
+             <td class="trennung">
+                @Html.DisplayFor(modelItem => item.Rating) / 10
             </td>
         </tr>
         }

@@ -18,5 +18,8 @@ namespace AnimeDatabase.Models
 
         [Required]
         public decimal Grösse { get; set; }
+
+        [Range(1, 10)]
+        public int Rating { get; set; }
     }
 }
