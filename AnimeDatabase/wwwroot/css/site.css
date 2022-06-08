@@ -298,7 +298,7 @@ color: royalblue
         }
 
         .container tr:hover {
-            background-color: #464A52;
+            background-color: darkslateblue;
             -webkit-box-shadow: 0 6px 6px -6px #0E1119;
             -moz-box-shadow: 0 6px 6px -6px #0E1119;
             box-shadow: 0 6px 6px -6px #0E1119;
@@ -309,7 +309,7 @@ color: royalblue
             color: black;
             font-weight: bold;
             box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
-            transform: translate3d(10px, -10px, 0);
+            transform: translate3d(5px, -5px, 0);
             transition-delay: 0s;
             transition-duration: 0.5s;
             transition-property: all;
