@@ -8,7 +8,7 @@ namespace AnimeDatabase.Models
     {
         public int ID { get; set; }
 
-        [StringLength(100, MinimumLength = 3)]
+        [StringLength(100, MinimumLength = 2)]
         [Required]
         public string Title { get; set; }
 

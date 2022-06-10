@@ -308,7 +308,7 @@ color: royalblue
             background-color: white;
             color: black;
             font-weight: bold;
-            box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+            box-shadow: darkblue -1px 1px, darkblue -2px 2px, darkblue -3px 3px, darkblue -4px 4px, darkblue -5px 5px, darkblue -6px 6px;
             transform: translate3d(5px, -5px, 0);
             transition-delay: 0s;
             transition-duration: 0.5s;

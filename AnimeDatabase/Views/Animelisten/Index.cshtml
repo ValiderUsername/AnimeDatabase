@@ -50,9 +50,9 @@
             <td class="trennung">
                 @Html.DisplayFor(modelItem => item.ReleaseDate)
             </td>
-            <td class="trennung"><h2>
+            <td class="trennung">
                 @Html.DisplayFor(modelItem => item.Rating)/10
-            </h2></td>
+            </td>
             <td class="trennung">
                 <button title="Edit" class="standardbutton" style='font-size:20px;'><a class="schrift" asp-action="Edit" asp-route-id="@item.ID"/><i class='far fa-edit'></i></button>
                 <button title="Details" class="standardbutton" style='font-size:20px'><a class="schrift" asp-action="Details" asp-route-id="@item.ID"/><i class="fas fa-info"></i></button>
