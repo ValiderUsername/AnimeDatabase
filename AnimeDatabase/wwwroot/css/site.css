@@ -308,7 +308,7 @@ color: royalblue
             background-color: white;
             color: black;
             font-weight: bold;
-            box-shadow: darkblue -1px 1px, darkblue -2px 2px, darkblue -3px 3px, darkblue -4px 4px, darkblue -5px 5px, darkblue -6px 6px;
+            box-shadow: purple -1px 1px, purple -2px 2px, purple -3px 3px, purple -4px 4px, purple -5px 5px, purple -6px 6px;
             transform: translate3d(5px, -5px, 0);
             transition-delay: 0s;
             transition-duration: 0.5s;
