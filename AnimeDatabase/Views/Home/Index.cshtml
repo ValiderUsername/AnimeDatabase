@@ -2,12 +2,11 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-<h1 class="Webseitetitel">Hauptseite</h1>
+<h1 class="Webseitetitel">Homepage</h1>
   <div class="row">
       <div class="col-sm-12">
-<h3>Unsere Datenbanken</h3>
-<h4>Animes</h4>
-<button style='font-size:16px'>@Html.ActionLink("Title", "Index", new { sortAnime = ViewBag.AnimeSort })<i class='fas fa-sort-alpha-down-alt'></i></button>
+<h3>Animelist</h3>
+<button style='font-size:16px'>@Html.ActionLink("Sort Titles", "Index", new { sortAnime = ViewBag.AnimeSort })<i class='fas fa-sort-alpha-down-alt'></i></button>
    <table class="container">
     <thead>
         <tr>
@@ -52,8 +51,8 @@
 </table>
       </div>
        <div class="col-sm-12">
-           <h4>Characters</h4>
-           <button style='font-size:16px'>@Html.ActionLink("Name sortieren", "Index", new { sortCharacter = ViewBag.CharacterSort })<i class='fas fa-sort-alpha-down-alt'></i></button>
+           <h3>Characterlist</h3>
+           <button style='font-size:16px'>@Html.ActionLink("Sort Names", "Index", new { sortCharacter = ViewBag.CharacterSort })<i class='fas fa-sort-alpha-down-alt'></i></button>
            <table class="container">
     <thead>
         <tr>
