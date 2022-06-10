@@ -17,6 +17,7 @@ namespace AnimeDatabase.Models
         public string Genre { get; set; }
 
         [Required]
+        [Range(1, 9999)]
         public int Episoden { get; set; }
 
         [DataType(DataType.Date)]
@@ -24,7 +25,7 @@ namespace AnimeDatabase.Models
         public DateTime ReleaseDate { get; set; }
 
         [Range(1, 10)]
-
+        [Required]
         public int Rating { get; set; }
     }
 }
