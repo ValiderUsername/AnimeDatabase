@@ -1,6 +1,6 @@
 ﻿@model (List<Animeliste> Anime, List<Characterliste> Characters)
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Homepage";
 }
 <h1 class="Webseitetitel">Homepage</h1>
   <div class="row">
@@ -51,6 +51,7 @@
 </table>
       </div>
        <div class="col-sm-12">
+           <br /><br />
            <h3>Characterlist</h3>
            <button style='font-size:16px'>@Html.ActionLink("Sort Names", "Index", new { sortCharacter = ViewBag.CharacterSort })<i class='fas fa-sort-alpha-down-alt'></i></button>
            <table class="container">
